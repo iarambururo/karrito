@@ -1,0 +1,150 @@
+@font-face{font-family: "IOI";
+		src: url("letra/AppleGaramond.ttf");}
+	body{background-color: black;
+		font-family: IOI;}
+	a{font-family: IOI;}
+	#borde{background-color: #D6D6D6;
+		width: 99%;
+		height: 450px;
+		padding-bottom: 0.5%;
+		border: 5px;
+		border-style: outset;}
+
+		#conjunto_prod{width: 100%;
+			height: 365px;
+			overflow: hidden;}
+			.barra{width: 103%;
+	    		height: 100%;
+	   			overflow-y: scroll;
+	    		padding-right: 17px;
+	    		box-sizing: content-box;}
+			#producto{background-color: white;
+				border: 2px solid #919191;
+				margin-top: 1.5%;
+				margin-left: 10%;
+				width: 85%;
+				height: 90px;
+				box-sizing: border-box;
+				display: flex;
+   				align-items: center;}
+				.tamaina{font-size: 35px;}
+
+			#nombre_prod{width: 50%;
+				display: inline-block;
+				margin-left: 3%;
+				overflow-x: hidden;
+				white-space: nowrap;
+ 				text-overflow: ellipsis;}
+			.cantidad{
+				text-align: center;
+				width: 20px;
+				height: 15px;
+				margin-right: 2%;
+				margin-left: 1.5%;
+				display: inline-block;
+				display: flex;
+   				align-items: center;}
+			#cantidad{display: inline-block;}
+			#precio{text-align: center;
+				width: 20%;
+				margin-left: 1.5%;
+				display: inline-block;}
+			#borrar{text-align: center;
+				width: 20px;
+				height: 20px;
+				margin-left: 3.5%;
+				display: inline-block;}
+
+		#abajo{background-color: #D6D6D6;
+			margin-top: 1%;
+			width: 100%;
+			height: 70px;
+			text-align: center;}
+		/*El de lista.php*/
+			#logo{background-color: #D6D6D6;
+				position: absolute;
+				width: 55%;
+				height: 70px;}
+				#ioi{float: left;
+					width: 300px;
+					height: 70px;
+					margin-left: 100px;
+					font-family: IOI;}
+				#ioi_nombre{font-size: 40px;
+					font-weight: bold;
+					margin-top: 10px;
+					margin-right: 81px;}
+		/*El de errezeta_bakoitza.php*/
+			#abajo2{background-color: #D6D6D6;
+			margin-top: 1%;
+			margin: 0 auto;
+			width: 80%;
+			height: 70px;
+			text-align: center;}
+			.e_izena{font-size: 35px;
+					font-weight: bold;}
+
+
+			#codigo_de_barras{background-color: #D6D6D6;
+				width: 58.5%;
+				height: 100%;
+				float: left;}
+				input{margin-top: 30px;}
+			#dena_borratu{float: right;
+				margin-top: 20px;}
+			#total{background-color: #FCF500;
+				border: 2px solid black;
+				width: 40%;
+				height: 100%;
+				float: left;}
+				#total_nombre{margin-top: 20px;
+					font-size: 30px;
+					font-weight: bold;}
+
+/*-------------Menu lateral de navegacion-------------*/
+		#mySidenav{position: absolute;
+			top: 2.45%;
+			left: 1.50%;
+			text-align: center;}
+		#rayas{position: absolute;
+			left: 4%;
+			top: 10%;}
+		.menu{margin-top: 2%;
+			margin-bottom: 2%;}
+		.sidenav {
+		    height: 395px;
+		    width: 0;
+		    position: fixed;
+		    z-index: 1;
+		    top: 0;
+		    left: 0;
+		    background: rgb(15, 15, 15, 0.95);
+		    overflow-x: hidden;
+		    transition: 0.7s;
+		    padding-top: 60px;}
+		.sidenav a {
+		    padding: 8px 8px 8px 32px;
+		    text-decoration: none;
+		    font-size: 40px;
+		    color: #f1f1f1;
+		    display: block;
+		    transition: 0.3s;}
+		.sidenav a:hover {
+		    color: #f1f1f1;}
+		.sidenav .closebtn {
+		    position: absolute;
+		    top: 0;
+		    right: 25px;
+		    font-size: 36px;
+		    margin-left: 50px;}
+			@media screen and (max-height: 450px) {
+			  .sidenav {padding-top: 15px;}
+			  .sidenav a {font-size: 18px;}}
+	/*----------------------------------------------------*/
+/*--------------------QR Sorrera---------------------------------*/
+#qrimage{
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+/*--------------------------------------------------------*/

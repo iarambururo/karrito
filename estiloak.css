@@ -1,0 +1,355 @@
+/*-Estilos generales*/
+	*{margin: 0;
+		padding: 0;}
+
+	body{background-image: url(irudiak/fondo3.jpg);
+
+		background-repeat: no-repeat;
+		/*background-position: center 0;*/
+		background-attachment: fixed;
+		background-size: 100% 100%;
+		font-weight: 430;}
+
+	/* width */
+	::-webkit-scrollbar {
+	  width: 10px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #f1f1f1; 
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #888; 
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #555; 
+	}
+	
+
+	header{border-bottom: 2px solid black;}
+
+	nav{background: #0061B8;
+		color: white;
+		font-size: 20px;
+		font-weight: 600;
+		/*text-shadow: 0 0 1px black;*/
+		/*border-top-right-radius: 20px;
+		border-top-left-radius: 20px;*/}
+
+	a:link{text-decoration: none;
+		color: #00C6FB;}
+	a:hover{color: white;}
+
+	.nav-item{margin: 2px;}
+
+	.nav-link:link{text-decoration: none;
+		color: white;}
+	.nav-link:hover{text-decoration: none;
+		color: white;
+		background: rgb(0, 149, 218, 0.7);}
+	.nav-link:visited {color: white;}
+
+	ul{margin-left: 5%;
+		list-style-image: url('irudiak/flecha.png');}
+
+	footer{background: rgb(213, 216, 220, 0.9);
+		font-weight: 430;
+		color: black;}
+
+
+	.egileak{margin: 0 auto;
+		font-size: 10px;}
+
+	input{width: 70%;}
+
+	@media (max-width: 1100px){
+	  	nav{font-size: 24px;}
+	}
+	@media (max-width: 950px){
+	  	#gomendioak{font-size: 28px;}
+	  	nav{font-size: 20px;}
+	}
+	@media (max-width: 800px){
+		nav{display: flex;
+		  	flex-direction: column;
+		  	font-size: 30px;}
+		.elementu{border: 0.5px solid silver;
+			background: silver;
+			width: 100%;
+			margin: 5px;}
+		#carrusel{visibility: hidden;
+	  		display: none;}
+	  	.izenburuak{font-size: 25px;}
+	}
+	@media (max-width: 700px){
+	  	.besteak, .arrazoiak{visibility: hidden;
+	  		display: none;}
+	  	.gomendioak{visibility: hidden;
+	  		display: none;}
+	}
+	@media (max-width: 600px){
+	  .nortzuk{visibility: hidden;
+	  	display: none;}
+	  #box{visibility: hidden;
+	  	display: none;}
+	}
+/*Estilos generales*/
+
+/*-Index*/
+	#carrusel{height: 200px;
+		overflow: hidden;
+		border-bottom: 2px solid black;}
+	
+	.nortzuk{background: rgb(0, 149, 218, 0.97);
+		text-align: justify;
+		color: black;}
+
+	.logina{background: rgb(241, 131, 0);
+		color: black;}
+		#sartu_kontuarekin{width: 100%;
+			margin-bottom: 2%;}
+
+	#box{background: rgb(0, 191, 218, 0.97);
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;}
+
+	.box{box-sizing: border-box;
+		padding: 5%;
+		font-weight: 430;
+		color: black;}
+/*Index*/
+
+/*-Logina*/
+	#erregistratu{
+		color: white;}
+	#formularioa{margin: 0 auto;
+		width: 60%;}
+	#guztia{padding-top: 1%;}
+	.sartu{width: 100%;
+		margin-top: 5px;}
+
+	.atalak{background: ;
+		height: 60px;
+		border-top-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		padding-left: 5%;}
+
+	.sartu:focus{outline: none;
+		border-color: #00C6FB;
+	    box-shadow: 0px 0px 5px 1px #00C6FB;}
+
+	#sartu{margin-left: 10%;}
+
+	#fondo{background: rgb(15, 15, 15, 0.9);
+		background-attachment: fixed;
+		background-size: 100%;
+		height: 100vh;}
+
+	.izenburua{text-align: center;}
+/*Logina*/
+
+/*-Errezetak*/
+	.e_b{font-weight: 4;
+		color: black;}
+	.goikaldea{background: rgb(0, 149, 218, 0.8);
+		/*border-left: 2px solid black;*/
+		/*border-right: 2px solid black;*/}
+
+	.ordenatu{padding-top: 5px;
+		padding-bottom: 5px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;}
+
+	.barra{margin-left: 2%;
+		margin-right: 5%;}
+	/*#handia{margin-left: 2%;
+		margin-right: 5%;}*/
+		.handia:focus{outline: none;
+			border-color: #494949;
+	    	box-shadow: 0px 0px 5px 1px #5D5D5D;}
+
+	#infor{margin-top: 8px;}
+
+	#informazioa{width: 70%;
+		padding-bottom: 10px;}
+
+	.gorputza{background: rgb(15, 15, 15, 0.9);
+		color: white;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 30px;
+		padding-left: 30px;
+		box-sizing: border-box;}
+
+	.gomendioak{margin-bottom: 20px;}
+
+	.osagaiak{margin-bottom: 20px;}
+
+	.errezetak{}
+		
+	.errezeta_gomendioak{background: #15ACD5;
+		border: 2px solid grey;
+		border-radius: 15px;
+		width: 100%;
+		height: 90px;
+		box-sizing: border-box;
+		padding-left: 5%;
+		display: flex;
+		align-items: center;
+		font-size: 30px;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;}
+
+	.esteka:link{text-decoration: none;
+		color: white;}
+	.esteka:hover{color: white;
+		background: rgb(0, 149, 218, 0.7);}
+	.errezeta_gomendioak:hover{color: white;
+		background: rgb(0, 149, 218, 0.7);
+		border-color: #00C6FB;
+	    box-shadow: 0px 0px 5px 1px #00C6FB;
+		font-size: 32px;}
+	.esteka:visited {color: white;}
+
+	
+/*Errezetak*/
+
+/*-Osagaiak*/
+	.bilatu{margin-top: 5px;}
+
+	#inprimakia2{width: 80%;}
+
+	#botoia{width: 50px;}
+
+	.botoia{width: 100px;}
+
+	#send{}
+
+	#alerta{color: red;
+		font-weight: bold;}
+
+	.borde{/*border: 2px solid silver;*/}
+
+	.osagaien_lista{font-size: 20px;
+		margin-left: 5%;}
+
+	.x_osagai{margin-left: 10%;}
+
+	.errezetak_osagaiena{font-size: 20px;
+		margin-left: 5%;}
+/*Osagaiak*/
+
+/*-Errezeta Bakoitza*/
+	.irudiak{width: 80%;
+		height: 80%;
+		border: 3px solid black;}
+	.irudiak_div{box-sizing: border-box;
+		padding-left: 0px;}
+
+	.gehitu2{border: 1px solid black;}
+
+	.eskuina{display: flex;
+		flex-direction: row;}
+
+	.pertsona{margin-left: 2%;
+		margin-right: 1%;}
+
+	/*.colore{background: rgba(73,155,234,1);
+		background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(163,207,255,1) 59%, rgba(138,195,255,1) 99%, rgba(32,124,229,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(59%, rgba(163,207,255,1)), color-stop(99%, rgba(138,195,255,1)), color-stop(100%, rgba(32,124,229,1)));
+		background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(163,207,255,1) 59%, rgba(138,195,255,1) 99%, rgba(32,124,229,1) 100%);
+		background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(163,207,255,1) 59%, rgba(138,195,255,1) 99%, rgba(32,124,229,1) 100%);
+		background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(163,207,255,1) 59%, rgba(138,195,255,1) 99%, rgba(32,124,229,1) 100%);
+		background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(163,207,255,1) 59%, rgba(138,195,255,1) 99%, rgba(32,124,229,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=0 );}*/
+	.colore{background: rgb(40, 149, 220, 0.95);
+		color: black;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 30px;
+		padding-left: 30px;
+		box-sizing: border-box;}
+
+	#elaborazioa{text-align: justify;
+		padding-left: 2%;}
+/*Errezeta Bakoitza*/
+/*-Zerrendak*/
+	.zerrenda_sortu{width: 80%;
+		float: left;}
+
+	.gehitu{width: 150px;
+		margin-left: 3%;}
+		.between{display: flex;
+		justify-content: space-between;}
+	#listak{width: 80%;
+		margin-top: 5%;
+		margin-left: 5%;}
+
+	.zerrenda_bakoitza{background: #20A7EF;
+		border: 2px solid grey;
+		border-radius: 5px;
+		width: 100%;
+		height: 80px;
+		margin: 3%;
+		box-sizing: border-box;
+		padding-left: 5%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 30px;}
+		.ellipsis{overflow: hidden;
+			white-space: nowrap; 
+ 			text-overflow: ellipsis;
+ 			margin-right: 3%;
+ 			width: 100%;}
+
+	.zerrenda_bakoitza:hover{color: white;
+		background: rgb(0, 149, 218, 0.7);
+		border-color: #00C6FB;
+	    box-shadow: 0px 0px 5px 1px #00C6FB;
+		font-size: 32px;}
+		.esteka:hover{background: rgb(0, 149, 218, 0);}
+		
+	.x_zerrendak{margin-right: 3%;}
+		.x:link{color: white;}
+		.x:visited{color: white;}
+		.x:hover{color: red;}
+
+	#camara{color: black;}
+/*Zerrendak*/
+/*-Zerrenda Bakoitza*/
+	.produktu_bakoitza{background: #4B008E;
+		border: 2px solid grey;
+		border-radius: 5px;
+		width: 90%;
+		height: 75px;
+		margin: 3%;
+		box-sizing: border-box;
+		padding-left: 3%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 25px;}
+
+	.produktu_bakoitza:hover{color: white;
+		background: rgb(51, 1, 96, 0.7);
+		border-color: #00C6FB;
+	    box-shadow: 0px 0px 5px 1px #00C6FB;}
+		.esteka:hover{background: rgb(0, 149, 218, 0);}
+/*Zerrenda Bakoitza*/
+
+/*erabiltzaileak*/
+
+#datuak{
+
+	text-align: center;
+	font-size: 20px;
+ 
+}

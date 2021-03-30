@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IOI Technology</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estiloak.css">
+</head>
+<body>
+	<div id="fondo" class="container-fluid">
+	<div id="guztia" class="container">
+		<div id="erregistratu">
+			<div id="formularioa">
+			<h1 class="izenburua">Erregistratu</h1>
+				<form action="erregistratu.php" method="POST">
+						<div class="atalak">
+						Erabiltzailea:<br/><input id="erab" class="sartu" type="text" name="Erab_izena" placeholder="Erabiltzaile izena..." pattern="[A-Za-z0-9_-]{1,25}" maxlength="25" oninvalid="this.setCustomValidity('Ezin dira Karaktere Bereziak erabili')" oninput="this.setCustomValidity('')" required></div><br/>
+						<div class="atalak">
+						Izena:<br/><input id="izena" class="sartu" type="text" name="Izena" placeholder="Izena..." pattern="[A-Za-z ]{3,18}" maxlength="18" oninvalid="this.setCustomValidity('Izena soilik letrak izan ditzake!')" oninput="this.setCustomValidity('')" required></div><br/>
+						<div class="atalak">
+						Abizena:<br/><input id="Abizena" class="sartu" type="text" name="Abizena" placeholder="Abizena..." pattern="[A-Za-z ]{2,20}" maxlength="20" oninvalid="this.setCustomValidity('Abizena soilik letrak izan ditzake!')" oninput="this.setCustomValidity('')" required></div><br/>
+						<div class="atalak">
+						Telefonoa:<br/><input id="Telefonoa" class="sartu" type="tel" name="Telefonoa" placeholder="Telefonoa..." pattern="[0-9]{1,9}" maxlength="9" oninvalid="this.setCustomValidity('Telefono zenbakiak zenbakiak soilik izan ditzake!')" oninput="this.setCustomValidity('')" required></div><br/>
+						<div class="atalak">
+						Korreoa:<br/><input id="korreoa" class="sartu" type="email" name="Korreoa" placeholder="Korreoa..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="this.setCustomValidity('Korreo helbide baten estruktura berdina izan behar du!')" oninput="this.setCustomValidity('')" required></div><br/>
+						<div class="atalak">
+						Pasahitza:<br/><input class="sartu" type="password" name="Pasahitza" placeholder="Pasahitza..." pattern="[A-Za-z0-9_-]{6,}" oninvalid="this.setCustomValidity('Ezin dira Karaktere Bereziak erabili eta Minimo 6 Karaktere izan behar ditu!')" oninput="this.setCustomValidity('')" required></div><br/>
+
+						<input id="Gorde" class="botoia btn btn-primary" type="submit" name="Gorde" value="Gorde">
+				</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

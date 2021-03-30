@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IOI Technology</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="estiloak.css">
+</head>
+<body>
+
+	<div id="fondo" class="container-fluid">
+	<div id="guztia" class="container">
+		<div id="erregistratu">
+			<div id="formularioa">
+			<h1 class="izenburua">Zure Kontuarekin Sartu</h1>
+			<script type="text/javascript">
+				// var input = document.getElementById('erab');
+				// input.oninvalid = function(event) {
+				//     event.target.setCustomValidity('Username should only contain lowercase letters. e.g. john');
+				// }
+			</script>
+				<form action="login.php" method="POST">
+						<div class="atalak">
+						Erabiltzailea:<br/><input id="erab" class="sartu" type="text" name="Erab_izena" placeholder="Erabiltzaile izena..." pattern="[A-Za-z0-9_-]{1,25}" maxlength="25" oninvalid="this.setCustomValidity('Erabiltzaile izena derrigorrezkoa da!')" oninput="this.setCustomValidity('')" required></div><br/>
+
+						<div class="atalak">
+						Pasahitza:<br/><input class="sartu" type="password" name="Pasahitza" placeholder="Pasahitza..."  maxlength="25" oninvalid="this.setCustomValidity('Pasahitza derrigorrezkoa da!')" oninput="this.setCustomValidity('')" required></div><br/>
+
+						<p class="izenburua">Oraindik ez zaude erregistratuta? Egin zure <a href="erregistratu.html">erregistroa hemen!</a>
+
+						<input id="sartu" class="botoia btn btn-primary" type="submit" name="Sartu" value="Sartu">
+				</form>
+
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

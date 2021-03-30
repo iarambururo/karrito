@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marquee</title>
+	<style type="text/css">
+		div{background: red;
+			width: 250px;
+			margin: 0 auto;}
+		.m{text-align: center;
+			margin-left: 0;
+			padding-left: 0;}
+	</style>
+</head>
+<body>
+	<div><marquee scrollamount="10" scrolldelay="200" direction="left" onMouseOver="this.stop()" onMouseOut="this.start()" loop="true" class='m'>Lorem ipsum dolor sit amet,</marquee></div>
+
+	<div><marquee onmouseover="this.setAttribute('scrollamount', 6, 0);" onmouseout="this.setAttribute('scrollamount', 0, 0);">
+your text here
+</marquee></div>
+
+<div><marquee id="test" behavior="scroll" direction="up" height="200" scrolldelay="20" scrollamount="2" onMouseOut="document.all.test.stop()" onMouseOver="document.all.test.start()">
+This is my test
+</marquee></div>
+
+</body>
+</html>

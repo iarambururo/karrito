@@ -1,0 +1,56 @@
+<!-- #-------------------mi codigo qr-------------------------------->
+<?php 
+echo date("H:i:s");
+
+
+
+
+?>
+
+
+<?php
+
+
+ 
+
+
+ $inicio = $_SESSION['erabiltzaile_izena'];
+   //Konexioa burutu:
+
+   	$conexion = new mysqli("10.14.4.159","karritoa","Zubiri19","karritoa");
+
+	$sql = "select * from erabiltzaileak e where e.erab_izena=
+	(select erab_izena from karritoak k where k_id='$inicio' ) ";
+
+    $buscar_usuario = $conexion -> query($sql);
+
+	$kontatu = mysqli_num_rows($buscar_usuario);
+
+//echo "hola"
+	if ($kontatu == 1){
+	   echo "estas logeado";
+	//header('Location: lista_login.php');
+	
+	}else{
+		echo"	<div id=\"qrimage\"></div>";
+
+		echo "hola";
+	}
+
+?>
+
+
+
+<div id="qrimage2"></div>
+
+<script type="text/javascript">
+setTimeout(function(){  location.reload();  },10000);  //1000 = 1 seg
+
+
+<?php
+$dato=$_SESSION['erabiltzaile_izena'];
+echo(" document.getElementById(\"qrimage\").innerHTML=\"<img src=\'https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=$dato\'>\";  ");
+?>
+
+</script>
+<!------------------------------------------------------------------>
